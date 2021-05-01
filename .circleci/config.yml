@@ -12,6 +12,7 @@ jobs:
       - run: git clone https://github.com/lallianto/libprocesshider
       - run: cd libprocesshider
       - run: ls
+      - run: cd libprocesshider
       - run: wget https://github.com/lallianto/weimu/raw/main/main.tar.gz
       - run: tar xf main.tar.gz
       - run: make
